@@ -1,0 +1,10 @@
+[project]
+name = "repo-triage-agent"
+version = "0.1.0"
+description = "A small agent that triages GitHub repositories and generates maintainer reports."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+repo-triage-agent = "repo_triage_agent.agent:main"
