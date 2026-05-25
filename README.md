@@ -61,12 +61,6 @@ export GITHUB_TOKEN=your_token_here
 python3 -m unittest discover -s tests
 ```
 
-## Application Description
-
-如果需要在模型申请表里描述项目，可以使用这段：
-
-> 我构建了一个面向开源项目维护者的 GitHub Repo Triage Agent。它可以读取指定 GitHub 仓库的 README、目录结构、open issues 和最近提交记录，自动识别项目状态、归类待处理问题，并生成维护建议报告。核心逻辑包含多步信息收集、结构化分析、任务优先级判断和 Markdown 报告生成，帮助维护者更快发现适合修复的问题、识别文档缺口，并规划下一步迭代。该项目已实现可运行 CLI、离线示例和自动化测试，方便在 GitHub 上复现和扩展。
-
 ## Project Scope
 
 当前版本刻意保持小而清楚：它是一个 deterministic agent，不依赖外部 LLM。后续可以接入 MiMo、GPT 或其他模型，把 issue 归因、优先级解释和行动建议升级为更自然的长链推理。
